@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.location.Main_Activity">
+    <!--线性垂直布局-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS"
+        android:textColor="#9a08e2"
+        android:textSize="48dp"
+        android:gravity="center_horizontal" />
+    <!--提示信息-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="实时位置："
+        android:textColor="#f9dd0c"
+        android:textSize="36dp"
+        android:layout_marginTop="13dp" />
+    <!--提示信息-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经度："
+            android:textColor="#f9dd0c"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9a08e2"
+            android:textSize="24dp"
+            android:layout_toRightOf="@id/text1" />
+        <!--经度-->
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬度："
+            android:textColor="#f9dd0c"
+            android:textSize="30dp"
+            android:layout_below="@id/text1" />
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9a08e2"
+            android:textSize="24dp"
+            android:layout_below="@id/longitude"
+            android:layout_toRightOf="@id/text2" />
+        <!--纬度-->
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高度："
+            android:textColor="#f9dd0c"
+            android:textSize="30dp"
+            android:layout_below="@id/text2" />
+
+        <EditText
+            android:id="@+id/altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9a08e2"
+            android:textSize="24dp"
+            android:layout_below="@id/latitude"
+            android:layout_toRightOf="@id/text3" />
+        <!--高度-->
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方向："
+            android:textColor="#f9dd0c"
+            android:textSize="30dp"
+            android:layout_below="@id/text3" />
+
+        <EditText
+            android:id="@+id/bearing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9a08e2"
+            android:textSize="24dp"
+            android:layout_below="@id/altitude"
+            android:layout_toRightOf="@id/text4" />
+        <!--方向-->
+
+    </RelativeLayout>
+
+</LinearLayout>
